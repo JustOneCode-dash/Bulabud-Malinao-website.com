@@ -1,24 +1,6 @@
 <div class="general-container">
     <h1 class="fade-in">General Information</h1>
     
-    <div class="stats-grid fade-in">
-        <div class="stat-item">
-            <div class="stat-icon">👥</div>
-            <div class="stat-content">
-                <h4>Total Population</h4>
-                <p class="stat-number">1,820</p>
-                <p class="stat-label">Residents (2020)</p>
-            </div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-icon">💼</div>
-            <div class="stat-content">
-                <h4>Primary Income Source</h4>
-                <p class="stat-text">Farming, Copras, Carpentry, OFW</p>
-            </div>
-        </div>
-    </div>
-
     <div class="summary-card fade-in">
         <table class="wiki-table">
             <thead>
@@ -33,6 +15,7 @@
                 <tr><td><strong>Province:</strong></td><td>Aklan</td></tr>
                 <tr><td><strong>Municipality:</strong></td><td>Malinao</td></tr>
                 <tr><td><strong>Postal code:</strong></td><td>5606</td></tr>
+                <tr><td><strong>Population (2020):</strong></td><td>1,820</td></tr>
                 <tr><td><strong>Philippine major island(s):</strong></td><td>Panay</td></tr>
                 <tr><td><strong>Coordinates:</strong></td><td>11.5770, 122.2777</td></tr>
                 <tr><td><strong>Estimated elevation:</strong></td><td>43.0 meters (141.1 feet)</td></tr>
@@ -84,33 +67,11 @@
         <p>The dedicated leaders serving Barangay Bulabud</p>
     </div>
 
-    <div class="officials-grid fade-in">
-        <div class="official-card">
-            <div class="official-img-box">
-                <img src="/images/Leader_PB.jpg" alt="Punong Barangay">
-            </div>
-            <div class="official-info">
-                <h3>Hon. Name Here</h3>
-                <p class="position">Punong Barangay</p>
-            </div>
-        </div>
-
-        <div class="official-card">
-            <div class="official-img-box">
-                <img src="/images/Leader_K1.jpg" alt="Barangay Kagawad">
-            </div>
-            <div class="official-info">
-                <h3>Hon. Name Here</h3>
-                <p class="position">Barangay Kagawad</p>
-            </div>
-        </div>
-        </div>
-
     <div class="official-photo-card fade-in">
         <div class="official-display">
-            <a href="images/BulabudOfficialMem2.jpg" target="_blank" class="official-link">
+            <a href="images/BulabudOfficialMem.jpg" target="_blank" class="official-link">
                 <div class="official-image-container">
-                    <img src="/images/BulabudOfficialMem.jpg" alt="Barangay Council" class="main-official-img">
+                    <img src="images/BulabudOfficialMem.jpg" alt="Barangay Council" class="main-official-img">
                     <div class="image-overlay">
                         <span>Click to view full photo</span>
                     </div>
@@ -128,7 +89,7 @@
         max-width: 900px;
         margin: 0 auto;
         padding: 20px 20px 60px;
-        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        font-family: 'Segoe UI', system-ui, sans-serif;
     }
 
     /* WIKIPEDIA STYLE TABLE */
@@ -138,51 +99,26 @@
         border: 1px solid #ccc;
         background: #fff;
         margin-bottom: 40px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
     .wiki-table thead th {
         background: #f2f2f2;
         padding: 12px;
         font-style: italic;
-        font-size: 1.1rem;
         border-bottom: 2px solid #ccc;
         text-align: center;
     }
     .wiki-table td {
         padding: 10px 15px;
         border-bottom: 1px solid #eee;
-        text-align: left;
     }
     .wiki-table td:first-child {
         width: 40%;
         background: #f9f9f9;
         font-weight: bold;
-        color: #333;
     }
     .wiki-table td:last-child {
-        color: #0645ad; /* Wiki blue */
+        color: #0645ad;
     }
-
-    /* STATS GRID */
-    .stats-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        margin-bottom: 40px;
-    }
-    .stat-item {
-        background: white;
-        padding: 25px;
-        border-radius: 15px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        border-left: 5px solid #007bff;
-    }
-    .stat-icon { font-size: 2.5rem; }
-    .stat-number { font-size: 1.8rem; font-weight: 800; color: #333; margin: 0; }
-    .stat-content h4 { margin: 0; color: #888; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; }
 
     /* MISSION & VISION */
     .mv-grid {
@@ -193,35 +129,28 @@
     }
     .mv-item {
         background: white;
-        padding: 35px;
+        padding: 30px;
         border-radius: 20px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        border: 1px solid #f0f0f0;
-        transition: transform 0.3s ease;
         border-top: 5px solid #007bff;
     }
-    .mv-item:hover { transform: translateY(-5px); }
     .mv-item.vision { border-top-color: #28a745; }
-    .mv-label { color: #888; text-transform: uppercase; font-weight: 800; font-size: 0.75rem; letter-spacing: 1.5px; }
-    .mv-content h2 { margin: 10px 0; color: #1a1a1a; font-size: 1.8rem; }
-    .mv-content p { color: #636e72; line-height: 1.7; font-size: 1.05rem; margin: 0; }
+    .mv-label { color: #888; text-transform: uppercase; font-weight: 800; font-size: 0.7rem; }
+    .mv-content h2 { margin: 10px 0; font-size: 1.8rem; }
+    .mv-content p { color: #636e72; line-height: 1.6; }
 
     /* PATRON SAINT */
-    .patron-saint-container { margin-bottom: 40px; }
     .saint-card {
         background: #fff;
         border-radius: 20px;
         display: flex;
         overflow: hidden;
         box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-        border: 1px solid #f0f0f0;
+        margin-bottom: 40px;
     }
     .saint-image-box { flex: 0 0 220px; }
     .saint-img { width: 100%; height: 100%; object-fit: cover; }
-    .saint-info { padding: 40px; text-align: left; }
-    .saint-label { color: #007bff; text-transform: uppercase; font-weight: 800; font-size: 0.8rem; letter-spacing: 2px; }
-    .saint-info h2 { margin: 10px 0; font-size: 2rem; color: #1a1a1a; }
-    .saint-info p { color: #636e72; line-height: 1.6; font-size: 1.1rem; margin: 0; }
+    .saint-info { padding: 40px; }
 
     /* FIESTA CARD */
     .fiesta-card {
@@ -232,33 +161,12 @@
         gap: 30px;
         padding: 30px;
         border-radius: 15px;
-        box-shadow: 0 10px 20px rgba(0,123,255,0.2);
         margin-bottom: 60px;
     }
     .fiesta-icon { font-size: 3.5rem; }
 
-    /* OFFICIALS GRID */
-    .officials-header { text-align: center; margin-bottom: 30px; }
-    .officials-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 25px;
-        margin-bottom: 40px;
-    }
-    .official-card {
-        background: white;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        border: 1px solid #eee;
-    }
-    .official-img-box { height: 320px; background: #f0f0f0; }
-    .official-img-box img { width: 100%; height: 100%; object-fit: cover; }
-    .official-info { padding: 20px; text-align: center; }
-    .official-info h3 { margin: 0; font-size: 1.2rem; }
-    .official-info .position { color: #007bff; font-weight: bold; margin-top: 5px; }
-
     /* PORTRAIT SECTION */
+    .officials-header { text-align: center; margin-bottom: 30px; }
     .official-photo-card {
         background: white;
         padding: 20px;
@@ -266,15 +174,14 @@
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     .official-image-container { position: relative; border-radius: 10px; overflow: hidden; }
-    .main-official-img { width: 100%; height: auto; display: block; transition: transform 0.4s ease; }
+    .main-official-img { width: 100%; display: block; }
     .image-overlay {
         position: absolute; inset: 0; background: rgba(0, 0, 0, 0.3);
         display: flex; align-items: center; justify-content: center;
         opacity: 0; transition: opacity 0.3s ease;
     }
-    .image-overlay span { color: white; background: #007bff; padding: 10px 20px; border-radius: 20px; font-weight: bold; }
     .official-link:hover .image-overlay { opacity: 1; }
-    .official-link:hover .main-official-img { transform: scale(1.02); }
+    .image-overlay span { color: white; background: #007bff; padding: 10px 20px; border-radius: 20px; }
     .official-caption { margin-top: 15px; font-style: italic; color: #636e72; text-align: center; }
 
     /* ANIMATIONS */
@@ -283,7 +190,7 @@
 
     /* MOBILE RESPONSIVE */
     @media (max-width: 768px) {
-        .stats-grid, .mv-grid { grid-template-columns: 1fr; }
+        .mv-grid { grid-template-columns: 1fr; }
         .saint-card { flex-direction: column; }
         .saint-image-box { flex: 0 0 250px; }
         .fiesta-card { flex-direction: column; text-align: center; }
